@@ -1,0 +1,42 @@
+﻿[
+  {
+    "img": "images/videosImg/coral-city1.png",
+    "titulo": "Coral City: Part 1",
+    "enlace": "https://www.youtube.com/embed/2Z351qk6eKE"
+  },
+  {
+    "enlace": "https://www.youtube.com/embed/L2IqZx0D050",
+    "img": "images/videosImg/cabo-pulmo.png",
+    "titulo": "Servicios Ambientales del Parque Nacional Cabo Pulmo"
+  },
+  {
+    "enlace": "https://www.youtube.com/embed/QRoT2sgcPXc",
+    "img": "images/videosImg/observacion-corales.PNG",
+    "titulo": "Buena practicas de observación mientras buceas"
+  },
+  {
+    "enlace": "https://www.youtube.com/embed/oZLhGAsB9z4",
+    "img": "images/videosImg/en-lo-profundo.png",
+    "titulo": "En Lo Profundo: Le llevamos las bellezas de los corales del Caribe Sur"
+  },
+  {
+    "enlace": "https://www.youtube.com/embed/PdcheUfw9A4",
+    "img": "images/videosImg/visita-virtual.png",
+    "titulo": "Visita virtual al fondo del mar de la Gran Barrera de Coral de Australia"
+  },
+  {
+    "enlace": "https://www.youtube.com/embed/UX5X2XK8T4A",
+    "img": "images/videosImg/guarderias-del-mar.PNG",
+    "titulo": "Los Corales en el Mar Caribe - Guarderías del mar - TvAgro por Juan Gonzalo Angel"
+  },
+  {
+    "enlace": "https://www.youtube.com/embed/_YVhMV0yusA",
+    "img": "images/videosImg/maldivas.PNG",
+    "titulo": "Maldivas: el paraíso del buceo"
+  },
+  {
+    "enlace": "https://www.youtube.com/embed/PWVlLOYC6Dg",
+    "img": "images/videosImg/colombia-arrecife.PNG",
+    "titulo": "Expediciones por Colombia. La vida en el arrecife de coral."
+  }
+]

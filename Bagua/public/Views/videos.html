@@ -1,0 +1,36 @@
+﻿<!--Views/videos.html-->
+<!--Esteban Morales
+G00294816
+Prof. Raquel Lugo
+COMP2025
+    Fecha de ultima actualizacion: 1 Nov 2015
+    -->
+
+<!--Aqui presenta la lista de videos. Esto esta dentro de un panel.-->
+<div class="panel panel-default">
+    <h1>Videos</h1>
+    <ul class="panel-body list-inline">
+        <li id="video-lista" class="item col-md-3" ng-repeat="video in inicio.listaVideo | orderBy: 'titulo'">
+            <a data-toggle="modal" data-target="#video" ng-click="inicio.GetVideoIndex($index)">
+                <img class="img-responsive" ng-src="{{video.img}}" alt=" video de {{video.titulo}}" />
+                <p>{{video.titulo}}</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- Modal; En esta seccion es cuando se abre el modal. Dentro del modal presenta un video utilizando el parametro del $index seleccionado del panel anterior. Este $index se utiliza para 
+    asi ver el video seleccionado. -->
+<div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe id="videoIframe"width="560" height="315" ng-src="{{inicio.listaVideo[inicio.videoIndex].enlace}}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+  

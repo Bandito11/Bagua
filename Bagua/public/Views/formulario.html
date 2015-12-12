@@ -1,0 +1,133 @@
+﻿<!--Views/formulario.html-->
+<!--Esteban Morales
+G00294816
+Prof. Raquel Lugo
+COMP2025
+    Fecha de ultima actualizacion: 1 Nov 2015
+    -->
+
+<div id="jumbotron" class="jumbotron">
+    <div class="row">
+        <div class="col-md-5 col-xs-12">
+            <h1>¿Porqué registrarse?</h1>
+            <p>Esta información es el primer paso que toma para un mejor mañana para la próxima generación.</p>
+        </div>
+        <!--Este es el formulario de registro. En el boton de registrar solo se activa cuando el usuario haya llenado todos los 'textbox' correctamente o sea cuando se cumpla los parametros
+            de ng-disabled. Despues de esto el boton se activa y les presenta un "Alert()" al usuario diciendo que se registro.
+         -->
+        <div class="col-md-5 col-md-offset-2">
+            <form novalidate name="registrarForm">
+                <h2>Anímese! Regístrese!!!</h2>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" name="nombre1" ng-model="inicio.user.nombre1" required /><span style="color:red" ng-show="registrarForm.nombre1.$dirty && registrarForm.nombre1.$invalid"><span ng-show="registrarForm.nombre1.$error.required">El nombre es requerido.</span></span>
+                </div>
+                <div class="form-group">
+                    <label>Apellido</label>
+                    <input type="text" class="form-control" name="apellido1" ng-model="inicio.user.apellido1" required /><span style="color:red" ng-show="registrarForm.apellido1.$dirty && registrarForm.apellido1.$invalid"><span ng-show="registrarForm.apellido1.$error.required">El apellido es requerido.</span></span>
+                </div>
+                <div class="form-group">
+                    <label>Pueblo de Procedencia</label>
+                    <input type="text" class="form-control" name="pueblo1" ng-model="inicio.user.pueblo1" required /><span style="color:red" ng-show="registrarForm.pueblo1.$dirty && registrarForm.pueblo1.$invalid"><span ng-show="registrarForm.pueblo1.$error.required">El pueblo es requerido.</span></span>
+                </div>
+                <div class="form-group">
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" name="nacimiento1" ng-model="inicio.user.nacimiento1" required /><span style="color:red" ng-show="registrarForm.nacimiento1.$dirty && registrarForm.nacimiento1.$invalid"><span ng-show="registrarForm.nacimiento1.$error.required">La fecha de nacimiento es requerido.</span></span>
+                </div>
+                <div class="form-group">
+                    <label>email</label>
+                    <input type="email" class="form-control" name="email1" ng-model="inicio.user.email1" required /><span style="color:red" ng-show="registrarForm.email1.$dirty && registrarForm.email1.$invalid"><span ng-show="registrarForm.email1.$error.required">El email es requerido.</span></span>
+                </div>
+                <button class="btn btn-default"
+                        ng-click="inicio.Validar()"
+                        ng-disabled="!(!!inicio.user.nombre1 && !!inicio.user.apellido1  && !!inicio.user.pueblo1 && !!inicio.user.nacimiento1 && !!inicio.user.email1)">
+                    Registrar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="squareList">
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <p><strong>Esta</strong> es la razon por la que usted busca educarse acerca de la conservacion de nuestros recursos.</p>
+        </div>
+        <div class="col-md-6">
+            <img class="img-responsive" src="images/nino1.jpg" alt="niño celebrando" />
+        </div>
+    </div>
+    <hr class="hidden-xs">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-responsive" src="images/nino2.jpg" alt="ninos jugando" />
+        </div>
+
+        <div class="col-md-6 col-xs-12">
+            <p>Lo que usted quisiera enseñarle a sus hijos, como una vez se lo enseñaron sus padres. Es por ello porque usted se registra al newsletter.</p>
+        </div>
+    </div>
+    <hr class="hidden-xs">
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                El newsletter le va a traer útil informacion a su email acerca de noticias seleccionadas acerca de los arrecifes de coral. Información que
+                le puede presentar a sus hijos en sus conversaciones.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img class="img-responsive" src="images/coral1.jpg" alt="coral" />
+        </div>
+    </div>
+    <hr class="hidden-xs">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-responsive" src="images/coral2.jpg" alt="coral" />
+        </div>
+        <div class="col-md-6">
+            <p><strong>¿Qué esperas?</strong></p>
+        </div>
+    </div>
+    <hr class="hidden-xs">
+    <div class="row">
+        <div class="col-md-5">
+            <!--Esto es lo mismo que la forma de registro de arriba pero con un uno al lado. -->
+            <form novalidate name="registrarForm">
+                <h1> Regístrate!!!</h1>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" name="nombre" ng-model="inicio.user.nombre" required /><span style="color:red" ng-show="registrarForm.nombre.$dirty && registrarForm.nombre.$invalid"><span ng-show="registrarForm.nombre.$error.required">El nombre es requerido.</span></span>
+                </div>
+                <div class="form-group">
+                    <label>Apellido</label>
+                    <input type="text" class="form-control" name="apellido" ng-model="inicio.user.apellido" required /><span style="color:red" ng-show="registrarForm.apellido.$dirty && registrarForm.apellido.$invalid"><span ng-show="registrarForm.apellido.$error.required">El apellido es requerido.</span></span>
+                </div>
+                <div class="form-group">
+                    <label>Pueblo de Procedencia</label>
+                    <input type="text" class="form-control" name="pueblo" ng-model="inicio.user.pueblo" required /><span style="color:red" ng-show="registrarForm.pueblo.$dirty && registrarForm.pueblo.$invalid"><span ng-show="registrarForm.pueblo.$error.required">El pueblo es requerido.</span></span>
+                </div>
+                <div class="form-group">
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" name="nacimiento" ng-model="inicio.user.nacimiento" required /><span style="color:red" ng-show="registrarForm.nacimiento.$dirty && registrarForm.nacimiento.$invalid"><span ng-show="registrarForm.nacimiento.$error.required">La fecha de nacimiento es requerido.</span></span>
+                </div>
+                <div class="form-group">
+                    <label>email</label>
+                    <input type="email" class="form-control" name="email" ng-model="inicio.user.email" required /><span style="color:red" ng-show="registrarForm.email.$dirty && registrarForm.email.$invalid"><span ng-show="registrarForm.email.$error.required">El email es requerido.</span></span>
+                </div>
+                <button class="btn btn-default"
+                        ng-click="inicio.Validar()"
+                        ng-disabled="!(!!inicio.user.nombre && !!inicio.user.apellido  && !!inicio.user.pueblo && !!inicio.user.nacimiento && !!inicio.user.email)">
+                    Registrar
+                </button>
+            </form>
+        </div>
+        <div id="fotoRegistro" class="col-md-7">
+            <img class="img-responsive " src="images/tree_corals.jpg" alt="fotos de coral" />
+        </div>
+    </div>
+</div>
+
+<!--ng-disabled="registrarForm.nombre.$dirty && registrarForm.nombre.$invalid ||
+registrarForm.apellido.$dirty && registrarForm.apeliido.$invalid ||
+registrarForm.pueblo.$dirty && registrarForm.pueblo.$invalid ||
+registrarForm.nacimiento.$dirty && registrarForm.nacimiento.$invalid ||
+registrarForm.email.$dirty && registrarForm.email.$invalid"-->

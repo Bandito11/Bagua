@@ -1,0 +1,28 @@
+﻿<!--Views/tabs.html-->
+<!--Esteban Morales
+G00294816
+Prof. Raquel Lugo
+COMP2025
+    Fecha de ultima actualizacion: 1 Nov 2015
+    -->
+
+<!--Esta es la barra de navegacion del website. Cada tab apunta a una diferente ruta definido en el codigo en el app.js-->
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+            <span style="color:#ffffff" class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        </div>
+
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav nav-pills">
+            <li><a ui-sref="tabs.inicio">Inicio</a></li>
+            <li><a ui-sref="tabs.videos">Videos</a></li>
+            <li><a ui-sref="tabs.formulario">Formulario</a></li>
+            <li><a ui-sref="tabs.acerca">Acerca</a></li>
+        </ul>
+        </div>
+    </div>
+</nav>
+    <div ui-view="tab-view"></div>

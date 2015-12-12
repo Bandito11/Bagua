@@ -1,0 +1,106 @@
+﻿<!--Views/inicio.html-->
+<!--Esteban Morales
+G00294816
+Prof. Raquel Lugo
+COMP2025
+    Fecha de ultima actualizacion: 1 Nov 2015
+    -->
+
+<!--Esta es la primera pagina para ver.-->
+<div id="jumbotron" class="jumbotron">
+    <!--Este es el mensaje de bienvenida-->
+    <div class="row">
+        <div class="col-md-8 col-xs-12">
+            <h1>Bienvenidos a Bagua.</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-xs-12">
+            <p>
+                No somos una organización de protección ambiental sino que somos individuos dedicados a
+                informar acerca de la importancia de los arrecifes de coral en nuestro Puerto Rico. Buscamos
+                concienciar a personas como ustedes sobre los beneficios que adquirimos de éstos y el daño irreparable
+                que estamos causando a estos preciados recursos naturales.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7 col-xs-12" id="frase">
+            <p>Juntos podemos proteger al ambiente.</p>
+        </div>
+    </div>
+</div>
+<hr class="hidden-xs" />
+<div class="row">
+    <!--A continuacion esta el carrusel. Presenta muchas fotos de diferentes cosas acerca de los arrecifes de coral-->
+    <div class="col-md-8">
+        <div id="animal_pictures" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+            <div class="carousel-inner" role="listbox">
+                <div id="animalPics" class="item active">
+                    <img src="images/carrusel/LIS-4067_8-26-14_pma_5_edited_300.jpg" alt="foto de coral blanqueado">
+                    <div class="carousel-caption">
+                        Foto de corales blanqueados en Hawaii
+                    </div>
+                </div>
+                <div id="animalPics" class="item" ng-repeat="inicio in inicio.animalPics">
+                    <img ng-src="{{inicio.imgUrl}}" alt="foto {{$index}}">
+                    <div class="carousel-caption">
+                        {{inicio.caption}}
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#animal_pictures" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#animal_pictures" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <hr class="hidden-xs" />
+        <!--Presenta una lista de noticias escogidas dentro de un panel basado en los "Cards" de Facebook-->
+        <div id="noti-panel" class="container-fluid">
+            <h1>Noticias Alrededor del Mundo</h1>
+            <!--presenta la lista en Cards con resumenes cortos de noticias almacenadas-->
+            <div class="container-fluid">
+                <ul class="list-inline">
+                    <li class="col-md-4" ng-repeat="inicio in inicio.notiLista">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">{{inicio.titulo}}</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>{{inicio.parrafo}}</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a ng-href="{{inicio.enlace}}" target="_blank">Mas información.</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Esta presenta una lista de blogs dentro de un panel basado en los "cards" de Facebook ligeramente.-->
+    <div id="lista-blog" class="col-md-4">
+        <center><h1>Blogs</h1></center>
+        <!--presenta la lista en Cards con resumenes cortos de noticias almacenadas-->
+            <ul>
+                <li ng-repeat="inicio in inicio.listaBlog">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{inicio.titulo}}</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>{{inicio.descripcion}}</p>
+                        </div>
+                        <div class="panel-footer">
+                            <a ng-href="{{inicio.enlace}}" target="_blank">Mas información.</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    </div>
+</div>

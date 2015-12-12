@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Bagua</Name>
+    <RootNamespace>Bagua</RootNamespace>
+    <NameOfLastUsedPublishProfile>Bagua - Web Deploy</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>21729536-3ed5-4e7f-963d-8a5aca06a623</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="public\javascripts\Modules\app.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="bin\www" />
+    <Compile Include="routes\users.js" />
+    <None Include="Bagua - Web Deploy.pubxml" />
+    <None Include="Bagua - FTP.pubxml" />
+    <Content Include="bin\ChangeConfig.ps1" />
+    <Content Include="bin\download.ps1" />
+    <Content Include="bin\node.cmd" />
+    <Content Include="bin\setup_web.cmd" />
+    <Content Include="web.config" />
+    <None Include="Bagua.pubxml" />
+    <Content Include="public\files\animalPics.json" />
+    <Content Include="public\files\blog.json" />
+    <Content Include="package.json" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\files\noticias.json" />
+    <Content Include="public\files\videos.json" />
+    <Content Include="public\images\carrusel\577571-19.jpg" />
+    <Content Include="public\images\carrusel\a02n1cie-1.jpg" />
+    <Content Include="public\images\carrusel\arrecifes-contaminacion-corales.jpg" />
+    <Content Include="public\images\carrusel\LIS-4067_8-26-14_pma_5_edited_300.jpg" />
+    <Content Include="public\images\coral1.jpg" />
+    <Content Include="public\images\coral2.jpg" />
+    <Content Include="public\images\Coral_Outcrop_Flynn_Reef.jpg" />
+    <Content Include="public\images\nino1.jpg" />
+    <Content Include="public\images\nino2.jpg" />
+    <Content Include="public\images\tree_corals.jpg" />
+    <Content Include="public\images\videosImg\cabo-pulmo.PNG" />
+    <Content Include="public\images\videosImg\colar-en-peligro.png" />
+    <Content Include="public\images\videosImg\colombia-arrecife.PNG" />
+    <Content Include="public\images\videosImg\coral-city1.PNG" />
+    <Content Include="public\images\videosImg\en-lo-profundo.png" />
+    <Content Include="public\images\videosImg\guarderias-del-mar.PNG" />
+    <Content Include="public\images\videosImg\maldivas.PNG" />
+    <Content Include="public\images\videosImg\observacion-corales.PNG" />
+    <Content Include="public\images\videosImg\visita-virtual.png" />
+    <Content Include="public\stylesheets\index.css" />
+    <Content Include="public\Views\acerca.html" />
+    <Content Include="public\Views\formulario.html" />
+    <Content Include="public\Views\inicio.html" />
+    <Content Include="public\Views\tabs.html" />
+    <Content Include="public\Views\videos.html" />
+    <Content Include="README.md" />
+    <Content Include="views\index.html" />
+    <Content Include="views\index.jade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="public\files\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\images\carrusel\" />
+    <Folder Include="public\images\videosImg\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\javascripts\Modules\" />
+    <Folder Include="public\Views\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

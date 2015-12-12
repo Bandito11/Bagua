@@ -1,0 +1,176 @@
+﻿.navbar-default {
+    border-color:#01579B;
+    background-color:#01579B;
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+ .navbar .nav > li  > a{
+    color:#ffffff;
+    text-shadow:none;
+}
+
+  .navbar .nav > li  > a:hover{
+    color:#000000;
+    text-shadow:none;
+}
+
+  .btn{
+      color:#ffffff;
+      background-color:#01579B;
+      background-image:none;
+  }
+body {
+    background-color: #E6E6E6;
+}
+
+#jumbotron {
+    background-color: #E6E6E6;
+    font-family: 'Roboto', sans-serif;
+}
+
+    #jumbotron h1 {
+        font-family: 'Vollkorn';
+        font-weight: 700;
+        font-size: 8em;
+        font-style: italic;
+    }
+
+    #jumbotron p {
+        font-weight: 400;
+        font-size: 2em;
+    }
+
+#frase p {
+    font-family: 'Vollkorn';
+    font-weight: 700;
+    font-size: 2em;
+    font-style: italic;
+}
+
+    @media (max-width: 480px) { 
+        #jumbotron h1 {
+          font-size: 4em;
+        }
+        #jumbotron p {
+          font-size: 1em;
+        }
+        #frase p {
+          font-size: 1em;
+        }
+    }
+#animalPics img {
+    height: 100%;
+    width: 100%;
+}
+
+#noti-panel {
+    font-family: 'Roboto', sans-serif;
+}
+
+    #noti-panel h1 {
+        font-weight: 900;
+        font-size: 3em;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    #noti-panel h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 1em;
+    }
+
+    #noti-panel p, a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    #noti-panel a {
+        font-style: italic;
+    }
+
+    .panel-default > .panel-heading {
+        background-color:#01579B!important;
+        background-image:none;
+        color:#ffffff;
+        text-shadow:none;
+    }
+#lista-blog {
+    font-family: 'Roboto', sans-serif;
+}
+
+    #lista-blog h1 {
+        font-weight: 900;
+        font-size: 3em;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    #lista-blog h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 1em;
+    }
+
+    #lista-blog p, a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    #lista-blog a {
+        font-style: italic;
+    }
+
+    #lista-blog ul{
+        list-style-type:none;
+    }
+
+#squareList {
+    font-family: 'Roboto', sans-serif;
+}
+
+    #squareList h1 {
+        font-weight: 500;
+        font-size: 3em;
+    }
+
+    #squareList p {
+        font-weight: 400;
+        font-size: 2em;
+    }
+
+#mision {
+    font-family: 'Roboto', sans-serif;
+}
+
+    #mision h1 {
+        font-weight: 900;
+        font-size: 3em;
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    #mision p {
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+#referencias {
+    font-family: 'Roboto', sans-serif;
+}
+
+    #referencias h1 {
+        font-weight: 900;
+        font-size: 3em;
+        text-decoration: underline;
+        font-style: italic;
+    }
+#video-lista a{
+    color:#000000;
+}
+#video-lista a:hover{
+    color:#0094ff;
+}

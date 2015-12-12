@@ -1,0 +1,76 @@
+﻿<!--Views/acerca.html-->
+<!--Esteban Morales
+G00294816
+Prof. Raquel Lugo
+COMP2025
+    Fecha de ultima actualizacion: 1 Nov 2015
+    -->
+
+    <div id="mision" class="row">
+        <div class="col-md-6">
+            <h1>Mision de Bagua</h1>
+            <p>
+                Informar al buen puertorriqueño acerca de los preciados recursos del oceano. Es nuestro objetivo crear
+                conciencia del daño que le hacemos a la flora y fauna con la contaminacion que causamos todos los dias.
+            </p>
+            <p>
+                Nos enfocamos en los arrecifes de coral ya que estos balancean el ecosistema del océano de la isla y
+                son importantes para el ambiente. Estos son de gran importancia para la pesca ya que éstos sirven de
+                hábitat para muchas especies marinas. Además que proveen protección contra la erosión en las costas y
+                los embates de las olas. Por otro lado, son ecosistema para cientos de animales acuíferos, en donde
+                ocurren los ciclos alimenticios que son importante para todos los seres vivientes.
+            </p>
+            <p>
+                Es por ello de la importancia de este sitio en la web, es una herramienta en donde se presenta, utilizando
+                diferentes medios, la fauna y la flora de estos preciosos ecosistemas y se informa a las personas los
+                efectos antropogénicos del mal uso de los recursos que se adquiere de estos.
+            </p>
+        </div>
+        <div class="col-md-3 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">
+                        Contactos
+                    </h2>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Esteban Morales
+                    </p>
+                    <p>
+                        G00294816
+                    </p>
+                    <p>
+                        email: <a href="mailto:emor4816@interponce.edu?Subject=Saludos!!!" target="_top">emor4816@interponce.edu</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hidden-xs" />
+    <div id="referencias" class="table-responsive">
+        <center><h1>Referencias</h1></center>
+        <!--Esta tabla presenta una lista de referencias.-->
+        <table class="table table-striped">
+            <tr>
+                <th>#</th>
+                <th>Titulo de Articulo</th>
+                <th>Autor</th>
+                <th>Enlace</th>
+            </tr>
+            <!--Se repite la data de las noticias aqui. -->
+            <tr ng-repeat="inicio in inicio.notiLista | orderBy: 'titulo'">
+                <td>{{$index + 1}}</td>
+                <td>{{inicio.titulo}}</td>
+                <td>{{inicio.autor}}</td>
+                <td><a ng-href="{{inicio.enlace}}" target="_blank">{{inicio.enlace}}</a></td>
+            </tr>
+            <!--Aqui presenta la data de la lista del blog.-->
+            <tr ng-repeat="inicio in inicio.listaBlog | orderBy: 'titulo'">
+                <td>{{$index + 7}}</td>
+                <td>{{inicio.titulo}}</td>
+                <td>{{inicio.autor}}</td>
+                <td><a ng-href="{{inicio.enlace}}" target="_blank">{{inicio.enlace}}</a></td>
+            </tr>
+        </table>
+    </div>
